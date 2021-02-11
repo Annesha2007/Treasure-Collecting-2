@@ -20,15 +20,15 @@ function preload(){
 
 function setup(){
   
-  createCanvas(windowWidth, windowHight);
+  createCanvas(windowWidth, windowHeight);
 // Moving background
-path=createSprite(200,200);
+path=createSprite(width/2,200);
 path.addImage(pathImg);
 path.velocityY = 4;
 
 
 //creating boy running
-boy = createSprite(70,580,20,20);
+boy = createSprite(width/2, height - 20,20,20);
 boy.addAnimation("SahilRunning",boyImg);
 boy.scale=0.08;
   
@@ -50,7 +50,7 @@ function draw() {
   boy.collide(edges);
   
   //code to reset the background
-  if(path.y > 400 ){
+  if(path.y > height ){
     path.y = height/2;
   }
   
