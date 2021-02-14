@@ -117,7 +117,7 @@ function createDiamonds() {
   var diamonds = createSprite(Math.round(random(50, 350),40, 10, 10));
   diamonds.addImage(diamondsImg);
   diamonds.scale=0.03;
-  diamonds.velocityY = 3;
+  diamonds.velocityY = 5;
   diamonds.lifetime = 400;
   diamondsG.add(diamonds);
 }
