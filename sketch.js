@@ -76,7 +76,7 @@ function draw() {
         gameState=END;
         
         boy.addAnimation("SahilRunning",endImg);
-        boy.x=200;
+        boy.x=500;
         boy.y=300;
         boy.scale=0.6;
         
